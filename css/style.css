@@ -8,5 +8,273 @@ font-family: 'Saira Condensed', sans-serif; */
 }
 
 header {
+  position: relative;
+  background-color: #29a6dc;
+  height: 90vh;
+  overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
+header > * {
+  position: absolute;
+}
+
+header img {
+  height: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+header div.welcome {
+  z-index: 1;
+  top: 4%;
+  font-family: "Saira Condensed", sans-serif;
+  text-align: center;
+  /* zeby tekst nie zaczynal sie od krawedzi */
+  left: 5%;
+  right: 5%;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+header h1 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+header h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+header button {
+  font-family: "Saira", sans-serif;
+  font-weight: 300;
+  line-height: 32px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  font-size: 12px;
+  border: 2px solid white;
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  header h2 {
+    font-size: 24px;
+  }
+
+  header button {
+    margin-top: 30px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+
+  header img {
+    right: -20%;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  header h1 {
+    font-size: 26px;
+  }
+
+  header h2 {
+    font-size: 24px;
+  }
+
+  header button {
+    margin-top: 40px;
+    line-height: 45px;
+    font-size: 24px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+  header p {
+    font-size: 80px;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  header h2 {
+    font-size: 32px;
+  }
+
+  header button {
+    margin-top: 60px;
+    line-height: 60px;
+    font-size: 24px;
+  }
+}
+
+@media (orientation: landscape) {
+  header img {
+    position: absolute;
+    height: 80%;
+    bottom: 0;
+    right: -5%;
+  }
+
+  header div.welcome {
+    top: 15%;
+    left: 7%;
+    right: 46%;
+  }
+
+  header button {
+    margin-top: 40px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  header h2 {
+    font-size: 22px;
+  }
+
+  header button {
+    font-size: 16px;
+    line-height: 40px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 768px) {
+  header p {
+    font-size: 62px;
+  }
+
+  header h1 {
+    margin-top: 40px;
+    font-size: 34px;
+  }
+
+  header h2 {
+    font-size: 34px;
+  }
+
+  header button {
+    margin-top: 80px;
+    font-size: 28px;
+    line-height: 70px;
+  }
+
+  header img {
+    right: -20%;
+    height: 95%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  header div.welcome {
+    left: 3%;
+  }
+
+  header p {
+    font-size: 56px;
+  }
+
+  header h1 {
+    margin-top: 40px;
+    font-size: 34px;
+  }
+
+  header h2 {
+    font-size: 34px;
+  }
+
+  header button {
+    margin-top: 80px;
+    font-size: 28px;
+    line-height: 70px;
+  }
+
+  header img {
+    right: -14%;
+    height: 90%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+  header div.welcome {
+    text-align: left;
+    left: 6%;
+  }
+
+  header p {
+    font-size: 100px;
+  }
+
+  header h1 {
+    margin-top: 40px;
+    font-size: 50px;
+  }
+
+  header h2 {
+    font-size: 50px;
+  }
+
+  header button {
+    margin-top: 100px;
+    line-height: 80px;
+    padding: 0 40px;
+    font-size: 30px;
+  }
+
+  header img {
+    right: -10%;
+    height: 90%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+  header p {
+    font-size: 120px;
+  }
+
+  header h1 {
+    margin-top: 40px;
+    font-size: 60px;
+  }
+
+  header h2 {
+    font-size: 60px;
+  }
+
+  header button {
+    line-height: 90px;
+  }
+
+  header img {
+    right: -8%;
+    height: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  header button {
+    transition: all 200ms ease-in-out;
+  }
+
+  header button:hover {
+    cursor: pointer;
+    background-color: #111;
+  }
+}
+
+section {
+  min-width: 100vh;
 }
